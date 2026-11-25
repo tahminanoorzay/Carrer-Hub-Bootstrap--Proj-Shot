@@ -80,6 +80,103 @@
         <!-- Job Details Section -->
         <div class="container border-bottom border-1 border-secondary py-4">
           <h4 class="fw-bold text-primary">02. Job Details</h4>
+          <div class="row mt-3">
+            <div class="col-md-6 mb-3">
+              <label for="position" class="form-label"
+                >Position Applying For</label
+              >
+              <select name="" id="position" class="form-select">
+                <option value="" selected disabled>Select a position</option>
+                <option value="front-end" class="form-control">
+                  FrontEnd Devaloper
+                </option>
+                <option value="back-end" class="form-control">
+                  BackEnd Devaloper
+                </option>
+                <option value="ui/ux-disin" class="form-control">
+                  Ul/UX Designer
+                </option>
+                <option value="digitle-markite" class="form-control">
+                  Digitle Markiting
+                </option>
+              </select>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="experience" class="form-label"
+                >Years of Experience</label
+              >
+              <select name="" class="form-control" id="experience">
+                <option value="" selected disabled>Select Experience</option>
+                <option value="fresh-graduate" class="form-control">
+                  Fresh Graduate
+                </option>
+                <option value="1-2-year" class="form-control">
+                  1 - 2 years
+                </option>
+                <option value="3-5-year" class="form-control">
+                  3 - 5 years
+                </option>
+                <option value="5-year" class="form-control">5+ years</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label class="form-label">Employment Type</label>
+            <div class="d-flex gap-3">
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="full-time"
+                  name="employment-type"
+                  value="full-time"
+                />
+                <label class="form-check-label" for="full-time">
+                  Full-Time
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="part-time"
+                  name="employment-type"
+                  value="part-time"
+                />
+                <label class="form-check-label" for="part-time">
+                  Part-Time
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="remote"
+                  name="employment-type"
+                  value="remote"
+                />
+                <label class="form-check-label" for="remote"> Remote </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-3">
+            <label for="salary" class="form-label"
+              >Expected Monthly Salary</label
+            >
+            <div class="input-group">
+              <span class="input-group-text">$</span>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="e.g. 2500"
+                id="salary"
+              />
+              <span class="input-group-text">USD</span>
+            </div>
+            <p class="form-text">Enter your expected salary in US dollars.</p>
+          </div>
         </div>
       </div>
     </form>
